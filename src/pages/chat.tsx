@@ -102,7 +102,7 @@ export default function Chat() {
                     <MainContainer>
                         <ChatContainer>
                             <MessageList className={styles.chatMessageList}
-                                typingIndicator={waitingForResponse && <TypingIndicator content="ChatGPT is thinking" style={{ background: '#432A74' }} />}>
+                                typingIndicator={waitingForResponse && <TypingIndicator content="Pixie is thinking" style={{ background: '#432A74' }} />}>
                                 {
                                     messages.map((message) => {
                                         return (
@@ -120,7 +120,7 @@ export default function Chat() {
                                     })
                                 }
                             </MessageList>
-                            <MessageInput placeholder="Type message here"
+                            <MessageInput placeholder="Ask Pixie"
                                 style={{ background: '#432A74' }}
                                 onSend={sendMessage}
                                 autoFocus={true}
